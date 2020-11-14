@@ -1,0 +1,32 @@
+PATTERNS
+VerbPrefix1 VerbStem1
+VerbStem2
+VerbStem3 VerbSuffix1
+
+
+
+LEXICON VerbPrefix1
+<plus10>:цIе
+<plus0>:
+
+LEXICON VerbSuffix1
+<mult20>:къа
+<plus0>:
+
+LEXICON VerbStem1
+са<one><attr>:сa
+Iу<two><attr>:Iу
+гIифу<five><attr>:гIифу
+ерхьи<six><attr>:ерхьи
+ери<seven><attr>:ери
+муя<eight><attr>:муя
+ерчIу<nine><attr>:ерчIу
+
+LEXICON VerbStem2
+йицIу<ten><attr>:йицIу
+къа<twenty><attr>:къа
+ягъцIур<forty><attr>:ягъцIур
+
+LEXICON VerbStem3
+хьибу<three><attr>:хьибу
+якьу<four><attr>:якьу
