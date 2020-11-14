@@ -1,19 +1,19 @@
 PATTERNS
-VerbPrefix1 VerbStem1
-VerbStem2
-VerbStem3 VerbSuffix1
+NumPrefix1 NumStem1
+NumStem1
+NumStem2
+NumStem3 NumSuffix1
+NumStem3
 
 
 
-LEXICON VerbPrefix1
+LEXICON NumPrefix1
 <plus10>:цIе
-<plus0>:
 
-LEXICON VerbSuffix1
+LEXICON NumSuffix1
 <mult20>:къа
-<plus0>:
 
-LEXICON VerbStem1
+LEXICON NumStem1
 са<one><attr>:сa
 Iу<two><attr>:Iу
 гIифу<five><attr>:гIифу
@@ -22,11 +22,11 @@ Iу<two><attr>:Iу
 муя<eight><attr>:муя
 ерчIу<nine><attr>:ерчIу
 
-LEXICON VerbStem2
+LEXICON NumStem2
 йицIу<ten><attr>:йицIу
 къа<twenty><attr>:къа
 ягъцIур<forty><attr>:ягъцIур
 
-LEXICON VerbStem3
+LEXICON NumStem3
 хьибу<three><attr>:хьибу
 якьу<four><attr>:якьу
