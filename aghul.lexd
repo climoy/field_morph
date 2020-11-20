@@ -1,0 +1,32 @@
+PATTERNS
+NumPrefix1 NumStem1
+NumStem1
+NumStem2
+NumStem3 NumSuffix1
+NumStem3
+
+
+
+LEXICON NumPrefix1
+<plus10>:цIе
+
+LEXICON NumSuffix1
+<mult20>:къа
+
+LEXICON NumStem1
+са<one><attr>:сa
+Iу<two><attr>:Iу
+гIифу<five><attr>:гIифу
+ерхьи<six><attr>:ерхьи
+ери<seven><attr>:ери
+муя<eight><attr>:муя
+ерчIу<nine><attr>:ерчIу
+
+LEXICON NumStem2
+йицIу<ten><attr>:йицIу
+къа<twenty><attr>:къа
+ягъцIур<forty><attr>:ягъцIур
+
+LEXICON NumStem3
+хьибу<three><attr>:хьибу
+якьу<four><attr>:якьу
