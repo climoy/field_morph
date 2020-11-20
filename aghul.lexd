@@ -1,32 +1,36 @@
 PATTERNS
-PrefixPlus10 Digit1-9^34
+Int10 Digit1-9^34
 Digit1-9^34
-Int102040
-Digit1-9^34 Mult20Suffix
+Int10
+Int20
+Int40
+Digit34 Int20
 Digit34
+Int1001000
 
-
-
-LEXICON PrefixPlus10
-<plus10>:цIе
-
-LEXICON Mult20Suffix
-<mult20>:къа
 
 LEXICON Digit1-9^34
-са<one><attr>:сa
-гIу<two><attr>:гIу
-гIифу<five><attr>:гIифу
-герхьи<six><attr>:герхьи
-гери<seven><attr>:гери
-муйа<eight><attr>:муйа
-герчIу<nine><attr>:герчIу
+са<num>:сa
+гIу<num>:гIу
+гIифу<num>:гIифу
+герхьи<num>:герхьи
+гери<num>:гери
+муйа<num>:муйа
+гйарчва<num>:гйарчва
 
-LEXICON Int102040
-йицIу<ten><attr>:йицIу
-къа<twenty><attr>:къа
-ягъцIур<forty><attr>:ягъцIур
+LEXICON Int10
+гицIу<num>:гицIу
+
+LEXICON Int20
+къа<num>:къа
+
+LEXICON Int40
+гйагъцIур<num>:гйагъцIур
 
 LEXICON Digit34
-хьибу<three><attr>:хьибу
-якьу<four><attr>:якьу
+хьибу<num>:хьибу
+гйакьу<num>:гйакьу
+
+LEXICON Int1001000
+гIерш<num>:гIерш
+аIзур<num>:аIзур
