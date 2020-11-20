@@ -1,32 +1,32 @@
 PATTERNS
-NumPrefix1 NumStem1
-NumStem1
-NumStem2
-NumStem3 NumSuffix1
-NumStem3
+PrefixPlus10 Digit1-9^34
+Digit1-9^34
+Int102040
+Digit1-9^34 Mult20Suffix
+Digit34
 
 
 
-LEXICON NumPrefix1
+LEXICON PrefixPlus10
 <plus10>:цIе
 
-LEXICON NumSuffix1
+LEXICON Mult20Suffix
 <mult20>:къа
 
-LEXICON NumStem1
+LEXICON Digit1-9^34
 са<one><attr>:сa
-Iу<two><attr>:Iу
+гIу<two><attr>:гIу
 гIифу<five><attr>:гIифу
-ерхьи<six><attr>:ерхьи
-ери<seven><attr>:ери
-муя<eight><attr>:муя
-ерчIу<nine><attr>:ерчIу
+герхьи<six><attr>:герхьи
+гери<seven><attr>:гери
+муйа<eight><attr>:муйа
+герчIу<nine><attr>:герчIу
 
-LEXICON NumStem2
+LEXICON Int102040
 йицIу<ten><attr>:йицIу
 къа<twenty><attr>:къа
 ягъцIур<forty><attr>:ягъцIур
 
-LEXICON NumStem3
+LEXICON Digit34
 хьибу<three><attr>:хьибу
 якьу<four><attr>:якьу
