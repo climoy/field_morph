@@ -1,4 +1,4 @@
-.DEFAULT_GOAL := rus3.ana.hfst
+.DEFAULT_GOAL := aghul.ana.hfst
 %.lexd.hfst: %.lexd
 	lexd $< | hfst-txt2fst -o $@
 %.ana.hfst: %.gen.hfst
