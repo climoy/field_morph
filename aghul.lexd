@@ -9,8 +9,8 @@ hundredthousand
 LEXICON numeralsbelowten
 са<num>:сa[ц1а-teen]				#1
 гIу<num>:гIу[ц1а-teen]				#2
-хьибу<num>:хьибу[ц1е-teen][short][comp]		#3
-гйакьу<num>:гйакьу[ц1е-teen][short][comp]	#4
+хьибу<num>:хьибу[ц1е-teen,short,comp]		#3
+гйакьу<num>:гйакьу[ц1е-teen,short,comp]	#4
 гIифу<num>:гIифу[ц1а-teen]	#5
 герхьи<num>:герхьи[ц1е-teen]	#6
 гери<num>:гери[ц1е-teen]	#7
