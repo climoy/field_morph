@@ -1,36 +1,35 @@
 PATTERNS
-Int10 Digit1-9^34
-Digit1-9^34
-Int10
-Int20
-Int40
-Digit34 Int20
-Digit34
-Int1001000
+teenprefix[ц1а-teen] numeralsbelowten[ц1а-teen]
+teenprefix[ц1е-teen] numeralsbelowten[ц1е-teen]
+aboveten[comp] vigasimalsuffix[comp]
+numeralsbelowten[short]vigasimalsuffix[short]
+numeralsbelowten[comp]vigasimalsuffix[comp]
+hundredthousand
 
+LEXICON numeralsbelowten
+са<num>:сa[ц1а-teen]				#1
+гIу<num>:гIу[ц1а-teen]				#2
+хьибу<num>:хьибу[ц1е-teen][short][comp]		#3
+гйакьу<num>:гйакьу[ц1е-teen][short][comp]	#4
+гIифу<num>:гIифу[ц1а-teen]	#5
+герхьи<num>:герхьи[ц1е-teen]	#6
+гери<num>:гери[ц1е-teen]	#7
+муйа<num>:муйа[ц1а-teen]	#8
+гйарчва<num>:гйарчва[ц1е-teen]	#9
 
-LEXICON Digit1-9^34
-са<num>:сa
-гIу<num>:гIу
-гIифу<num>:гIифу
-герхьи<num>:герхьи
-гери<num>:гери
-муйа<num>:муйа
-гйарчва<num>:гйарчва
+LEXICON teenprefix
+гицIу<num>:цIа[ц1а-teen]
+гицIу<num>:цIе[ц1е-teen]
 
-LEXICON Int10
-гицIу<num>:гицIу
+LEXICON aboveten
+гицIу<num>:гицIu		#10
+къа<num>:къа[comp]		#20
+гйагъцIур<num>:гйагъцIур[comp]	#40
 
-LEXICON Int20
-къа<num>:къа
+LEXICON vigasimalsuffix
+къа<num>:къа[short]
+къа=на=гицIу<num>:къаннагицIу[comp] 
 
-LEXICON Int40
-гйагъцIур<num>:гйагъцIур
-
-LEXICON Digit34
-хьибу<num>:хьибу
-гйакьу<num>:гйакьу
-
-LEXICON Int1001000
-гIерш<num>:гIерш
-аIзур<num>:аIзур
+LEXICON hundredthousand
+гIерш<num>:гIерш		#100
+аIзур<num>:аIзур		#1000
