@@ -1,0 +1,64 @@
+PATTERNS	
+PersABS_ERG				#personal
+PersGEN					#personal
+PersOBLstem OblCase[pers]		#personal
+ReflexABS				#reflexive
+ReflexOBLstem OblCase?			#reflexive
+EmphPrefix? DemRoot								#demonstrative
+EmphPrefix? DemRoot AlterVowel[e]						#demonstrative
+EmphPrefix? DemRoot AlterVowel[i] OblCase[dem]?					#demonstrative
+EmphPrefix? DemRoot AlterVowel[e] PlurSuffix AlterVowel[i]?			#demonstrative
+EmphPrefix? DemRoot AlterVowel[e] PlurSuffix AlterVowel[i] OblCase[dem]?	#demonstrative
+
+
+LEXICON EmphPrefix
+<OST>:wow
+<EMP>:ha
+<SUPEMP>:mah
+
+LEXICON DemRoot
+m<DEM.PROX>:m
+l<DEM.DIST>:l
+g<DEM.UP>:g
+t<DEM.DOWN>:t
+
+LEXICON AlterVowel
+:e[e]
+:i[i]
+
+LEXICON PlurSuffix
+<Pl>:wur
+
+LEXICON PersABS_ERG
+zun<1SgABS/ERG>:zun
+wun<2SgABS/ERG>:wun
+cin<1PlExclABS/ERG>:cin
+xin<1PlInclABS/ERG>:xin
+cun<2PlABS/ERG>:cun
+
+LEXICON PersGEN
+ze<1SgPOSS>:ze
+we<2SgPOSS>:we
+ce<2SgPOSS>:ce
+xe<1PlInclPOSS>:xe
+cwe<2Pl>:cwe
+
+LEXICON PersOBLstem
+za<1Sg>:za
+wa<2Sg>:wa
+ca<1PlExcl>:ca
+xja<1PlIncl>:xja
+cwa<2Pl>:cwa
+
+LEXICON ReflexABS
+uc<SgABS>:uc
+cab<PlABS>:cab
+
+LEXICON ReflexOBLstem
+uci<SgERG>:uci
+cipi<PlERG>:cipi
+
+LEXICON OblCase
+<DAT>:s[pers,dem]
+<COM>:gaj[pers]
+<GEN>:n[dem]	
