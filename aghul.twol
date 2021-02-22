@@ -1,17 +1,17 @@
-ALPHABET	йа:я а б в г гъ гь гI д дж е ё ж з и й к кк
+Alphabet	йа:я а б в г гъ гь гI д дж е ё ж з и й к кк
 		къ кь кI л м н о п пп пI р с т тт тI у уь
 		ф х хъ хь хI ц цI ч чч чI ш щ ъ I ы ь э ю я;
 
-SETS
+Sets
 		Vowels	=	а е ё и о у уь ы э ю я;
 		Cons	=	б в г гъ гь гI д дж ж з к кк
 				къ кь кI л м н п пп пI р с т тт тI
 				ф х хъ хь хI ц цI ч чч чI ш щ ъ I ь;
 
-DEFINITIONS
-		anycon = [Vowels|Cons]
+Definitions
+		anycon = [Vowels|Cons];
 
-RULES
+Rules
 
 "deep я as surface йа resolution in the middle of a word"
 йа:я <=> anycon _ anycon ; 
