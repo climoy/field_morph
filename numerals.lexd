@@ -1,35 +1,59 @@
+PATTERN 11-19
+Ten[comp_a] One-Nine[a]
+Ten[comp_e] One-Nine[e]
+
+PATTERN EvenTens
+Twenty[20]
+Forty[40]
+One-Nine[3]Twenty[20]
+One-Nine[4]Twenty[20]
+
+PATTERN 20-99
+EvenTens > Coordinate (One-Nine|11-19)
+
+PATTERN 100-999
+One-Nine[counter] < Hundred > Coordinate (One-Nine|Ten[10]|11-19|20-99)
+
+PATTERN 1000-999999
+(One-Nine|11-19|20-99|100-999) < Thousand > Coordinate (One-Nine|11-19|20-99|100-999)
+
 PATTERNS
-teenprefix[ц1а-teen] numeralsbelowten[ц1а-teen]
-teenprefix[ц1е-teen] numeralsbelowten[ц1е-teen]
-aboveten[comp] vigasimalsuffix[comp]
-numeralsbelowten[short]vigasimalsuffix[short]
-numeralsbelowten[comp]vigasimalsuffix[comp]
-hundredthousand
+One-Nine				#1-9
+Ten[10]					#10
+11-19					#11-19
+20-99					#20-99
+100-999					#100-999
+1000-999999				#1000-999999
+ 
 
-LEXICON numeralsbelowten
-са<num>:сa[ц1а-teen]				#1
-гIу<num>:гIу[ц1а-teen]				#2
-хьибу<num>:хьибу[ц1е-teen,short,comp]		#3
-гйакьу<num>:гйакьу[ц1е-teen,short,comp]	#4
-гIифу<num>:гIифу[ц1а-teen]	#5
-герхьи<num>:герхьи[ц1е-teen]	#6
-гери<num>:гери[ц1е-teen]	#7
-муйа<num>:муйа[ц1а-teen]	#8
-гйарчва<num>:гйарчва[ц1е-teen]	#9
+LEXICON One-Nine[counter]
+са:са<num>[1,a,-counter]	#1
+Iуд:Iуд<num>[2,a]		#2
+хьибуд:хьибуд<num>[3,e]		#3
+якьуд:якьуд<num>[4,e]		#4
+гIифуд:гIифуд<num>[5,a]		#5
+ерхьид:ерхьид<num>[6,e]		#6
+ерид:ерид<num>[7,e]		#7
+муяд:муяд<num>[8,a]		#8
+ерчIуд:ерчIуд<num>[9,e]		#9
 
-LEXICON teenprefix
-гицIу<num>:цIа[ц1а-teen]
-гицIу<num>:цIе[ц1е-teen]
+LEXICON Ten
+йицIуд:йицIуд<num>[10]		#10
+цIa:йицIуд<num>[comp_a]		#10
+цIе:йицIуд<num>[comp_e]		#10
 
-LEXICON aboveten
-гицIу<num>:гицIu		#10
-къа<num>:къа[comp]		#20
-гйагъцIур<num>:гйагъцIур[comp]	#40
+LEXICON Twenty
+къад:къад<num>[20]		#20
+къа:къад<num>[comp]		#20
 
-LEXICON vigasimalsuffix
-къа<num>:къа[short]
-къа=на=гицIу<num>:къаннагицIу[comp] 
+LEXICON Forty
+ягъцIур:ягъцIур<num>[40]	#40
 
-LEXICON hundredthousand
-гIерш<num>:гIерш		#100
-аIзур<num>:аIзур		#1000
+LEXICON Hundred
+верш:верш<num>[100]		#100
+
+LEXICON Thousand
+агъзур:агъзур<num>[1000]	#1000
+
+LEXICON Coordinate
+на:на<coord>
