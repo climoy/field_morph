@@ -4,61 +4,68 @@ PersGEN					#personal
 PersOBLstem OblCase[pers]		#personal
 ReflexABS				#reflexive
 ReflexOBLstem OblCase?			#reflexive
-EmphPrefix? DemRoot								#demonstrative
-EmphPrefix? DemRoot AlterVowel[e]						#demonstrative
-EmphPrefix? DemRoot AlterVowel[i] OblCase[dem]?					#demonstrative
-EmphPrefix? DemRoot AlterVowel[e] PlurSuffix AlterVowel[i]?			#demonstrative
-EmphPrefix? DemRoot AlterVowel[e] PlurSuffix AlterVowel[i] OblCase[dem]?	#demonstrative
+EmphPrefix < DemRoot > (AlterVowel[e]|AlterVowel[i]) > OblCase[dem]					#demonstrative
+EmphPrefix < DemRoot > (AlterVowel[e]|AlterVowel[i]) > PlurSuffix > (AlterVowel[e]|AlterVowel[i])	#demonstrative
+InterRoot	#interrogative
 
 
 LEXICON EmphPrefix
-<OST>:wow
-<EMP>:ha
-<SUPEMP>:mah
+<OST>:вов
+<EMP>:ха
+<SUPEMP>:мах
 
 LEXICON DemRoot
-m<DEM.PROX>:m
-l<DEM.DIST>:l
-g<DEM.UP>:g
-t<DEM.DOWN>:t
+м<DEM.PROX>:м
+л<DEM.DIST>:л
+г<DEM.UP>:г
+т<DEM.DOWN>:т
 
 LEXICON AlterVowel
-:e[e]
-:i[i]
+:е[e]
+:и[i]
 
 LEXICON PlurSuffix
-<Pl>:wur
+<Pl>:вур
 
 LEXICON PersABS_ERG
-zun<1SgABS/ERG>:zun
-wun<2SgABS/ERG>:wun
-cin<1PlExclABS/ERG>:cin
-xin<1PlInclABS/ERG>:xin
-cun<2PlABS/ERG>:cun
+зун<1SgABS/ERG>:зун
+вун<2SgABS/ERG>:вун
+чин<1PlExclABS/ERG>:чин
+хьин<1PlInclABS/ERG>:хьин
+чун<2PlABS/ERG>:чун
 
 LEXICON PersGEN
-ze<1SgPOSS>:ze
-we<2SgPOSS>:we
-ce<2SgPOSS>:ce
-xe<1PlInclPOSS>:xe
-cwe<2Pl>:cwe
+зе<1SgPOSS>:зе
+ве<2SgPOSS>:ве
+че<2SgPOSS>:че
+хе<1PlInclPOSS>:хе
+чве<2Pl>:чве
 
 LEXICON PersOBLstem
-za<1Sg>:za
-wa<2Sg>:wa
-ca<1PlExcl>:ca
-xja<1PlIncl>:xja
-cwa<2Pl>:cwa
+за<1Sg>:за
+ва<2Sg>:ва
+ча<1PlExcl>:ча
+хйа<1PlIncl>:хйа
+чва<2Pl>:чва
 
 LEXICON ReflexABS
-uc<SgABS>:uc
-cab<PlABS>:cab
+уч<SgABS>:уч
+чаб<PlABS>:чаб
 
 LEXICON ReflexOBLstem
-uci<SgERG>:uci
-cipi<PlERG>:cipi
+учи<SgERG>:учи
+чипи<PlERG>:чипи
 
 LEXICON OblCase
-<DAT>:s[pers,dem]
-<COM>:gaj[pers]
-<GEN>:n[dem]	
+<DAT>:с[pers,dem]
+<COM>:гай[pers]
+<GEN>:н[dem]	
+
+LEXICON InterRoot
+найе<INTRG>:найе
+найса<INTRG>:найса
+мус<INTRG>:мус
+фиштти<INTG>:фиштти
+фас<INTG>:фас
+фикьас<INTG>:факьас
+химу<INTG>:химу
