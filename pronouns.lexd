@@ -10,62 +10,62 @@ InterRoot	#interrogative
 
 
 LEXICON EmphPrefix
-<OST>:вов
-<EMP>:ха
-<SUPEMP>:мах
+вов:<OST>
+ха:<EMP>
+мах:<SUPEMP>
 
 LEXICON DemRoot
-м<DEM.PROX>:м
-л<DEM.DIST>:л
-г<DEM.UP>:г
-т<DEM.DOWN>:т
+м:м<DEM.PROX>
+л:л<DEM.DIST>
+г:г<DEM.UP>
+т:т<DEM.DOWN>
 
 LEXICON AlterVowel
-:е[e]
-:и[i]
+е:[e]
+и:[i]
 
 LEXICON PlurSuffix
-<Pl>:вур
+вур:<Pl>
 
 LEXICON PersABS_ERG
-зун<1SgABS/ERG>:зун
-вун<2SgABS/ERG>:вун
-чин<1PlExclABS/ERG>:чин
-хьин<1PlInclABS/ERG>:хьин
-чун<2PlABS/ERG>:чун
+зун:зун<1SgABS/ERG>
+вун:вун<2SgABS/ERG>
+чин:чин<1PlExclABS/ERG>
+хьин:хьин<1PlInclABS/ERG>
+чун:чун<2PlABS/ERG>
 
 LEXICON PersGEN
-зе<1SgPOSS>:зе
-ве<2SgPOSS>:ве
-че<2SgPOSS>:че
-хе<1PlInclPOSS>:хе
-чве<2Pl>:чве
+зе:зе<1SgPOSS>
+ве:ве<2SgPOSS>
+че:че<2SgPOSS>
+хе:хе<1PlInclPOSS>
+чве:чве<2Pl>
 
 LEXICON PersOBLstem
-за<1Sg>:за
-ва<2Sg>:ва
-ча<1PlExcl>:ча
-хйа<1PlIncl>:хйа
+за:за<1Sg>
+ва:ва<2Sg>
+ча:ча<1PlExcl>
+хйа:хйа<1PlIncl>
 чва<2Pl>:чва
 
 LEXICON ReflexABS
-уч<SgABS>:уч
-чаб<PlABS>:чаб
+уч:уч<SgABS>
+чаб:чаб<PlABS>
 
 LEXICON ReflexOBLstem
-учи<SgERG>:учи
-чипи<PlERG>:чипи
+учи:учи<SgERG>
+чипи:чипи<PlERG>
 
 LEXICON OblCase
-<DAT>:с[pers,dem]
-<COM>:гай[pers]
-<GEN>:н[dem]	
+с:<DAT>[pers,dem]
+гай:<COM>[pers]
+н:<GEN>[dem]	
 
 LEXICON InterRoot
-найе<INTRG>:найе
-найса<INTRG>:найса
-мус<INTRG>:мус
-фиштти<INTG>:фиштти
-фас<INTG>:фас
-фикьас<INTG>:факьас
-химу<INTG>:химу
+найе:найе<INTRG>
+найса:найса<INTRG>
+мус:мус<INTRG>
+фиштти:фиштти<INTG>
+фас:фас<INTG>
+фикьяс:фикьас<INTG>
+химу:химу<INTG>
